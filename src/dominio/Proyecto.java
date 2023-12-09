@@ -9,9 +9,21 @@ public class Proyecto extends Merito{
         this.financiacion = financiacion;
     }
 
+    public double getFinanciacion(){
+        return financiacion;
+    }
+
+    public void setFinanciacion(double financiacion){
+        this.financiacion = financiacion;
+    }
+    
     public double valorar(){
 
         return financiacion/100000;
+    }
+    
+    public String toString(){
+        return super.toString() + "Financiacion: " + financiacion;
     }
 
 

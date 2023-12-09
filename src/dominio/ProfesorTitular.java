@@ -6,11 +6,11 @@ public class ProfesorTitular extends Profesor{
         super(nombre);
     }
     public double calcularValoracion(){
+         double suma = 0;
      if(meritos.size()==0){
             return 0.0;
         }
      else {
-        double suma = 0;
         for(Merito m : meritos){
             suma += m.valorar();
         }
